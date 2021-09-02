@@ -41,8 +41,8 @@ public class UserServiceImpl implements UserService {
         User user = getById(updatedUser.getId());
         if (!user.getPassword().equals(userDao.getById(user.getId()).getPassword())) {
             user.setPassword(passwordEncoder.encode(user.getPassword()));
-            userDao.update(user);
         }
+        userDao.update(updatedUser);
     }
 
     @Override

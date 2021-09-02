@@ -49,7 +49,7 @@ public class DataInitializer {
         user2.setName("Olga");
         user2.setSurname("Sorokina");
         user2.setAge((byte) 37);
-//        user2.addRole(role1);
+        user2.addRole(role1);
         user2.addRole(role2);
 
         User user3 = new User();

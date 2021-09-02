@@ -29,7 +29,6 @@
                 <span th:text="${role.getAuthority()}">roles</span>
             </span>
         </td>
-
         <td><a th:href="@{/admin/users/{id}(id=${user.getId()})}">Show Information</a></td>
         <td><a th:href="@{/admin/users/{id}/edit(id=${user.getId()})}">Edit User</a></td>
     </tr>
